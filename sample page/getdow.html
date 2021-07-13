@@ -1,0 +1,17 @@
+
+    <input id="txt" placeholder="yyyymmdd" type="text"> 
+    <button onclick="showday()">GO</button>
+    <h1 id="op1"></h1>
+    <h1 id="op2"></h1>
+
+<script src="https://beyond-space21.github.io/js/sc/getdow.js"></script>
+<script>
+   var day=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+    function showday() {
+        var txt = document.getElementById("txt").value;
+        var output = getdow(txt);
+        document.getElementById("op1").innerHTML=(output);
+        document.getElementById("op2").innerHTML=(day[output]);
+    }
+</script>
