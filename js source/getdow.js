@@ -10,6 +10,8 @@ where,
 6-saturday
 
 NOTE: input formate should be yyyymmdd
+
+author: Rajanand
 */
 
 function getdow(a) {
