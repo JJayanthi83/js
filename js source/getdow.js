@@ -1,19 +1,3 @@
-/*
-getdow(yyyymmdd) returns a integer value within [0,1,2,3,4,5,6];
-where,
-0-sunday
-1-monday
-2-tuesday
-3-wednesday
-4-thurseday
-5-friday
-6-saturday
-
-NOTE: input formate should be yyyymmdd
-
-author: Rajanand
-*/
-
 function getdow(a) {
     var b;
     var b2 = [6, 0, 1, 2, 3, 4, 5];
