@@ -1,1 +1,34 @@
+<!-- author: Rajanand  -->
+getdow(i) returns a class with objects [date,month,year]
+<br><br>
+where,i = random formate date string
+<br><br>
+example: <br>
+2021 13th may  {date:13,month:5,year:2021} <br>
+maY 2020 1st   {date:1,month:5,year:2020} <br>
+2002 1 jully   {date:1,month:7,year:2002} <br>
+<br><br>
+and try many!
 
+<br><br><br>
+
+
+<input id="txt" placeholder="input" type="text"> 
+<button onclick="showday()">GO</button><br><br>
+
+Date:<span id="date">*</span><br>
+Month:<span id="month">*</span><br>
+Year:<span id="year">*</span>
+
+<script src="info.js"></script>
+<script>
+function showday() {
+    var txt = document.getElementById("txt").value;
+    
+    var x = formatedate(txt);
+    
+    document.getElementById("date").innerHTML=(x.date);
+    document.getElementById("month").innerHTML=(x.month);
+    document.getElementById("year").innerHTML=(x.year);
+}
+</script>
