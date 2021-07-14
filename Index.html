@@ -1,8 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-    <script>
-        window.onload = function() {
-    window.location.href = "https://github.com/beyond-space21/js/tree/main/sc";
-}
-    </script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: rgb(136, 134, 134);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .button1 {
+        background-color: chocolate;
+        margin: 10px;
+        color: beige;
+        border: 0ch;
+        font-size: xxx-large;
+        border-radius: 10px;
+    }
+
+    button:hover {
+        color: rgb(255, 255, 0);
+        background-color: blueviolet;
+    }
+
+    .div1 {
+        padding: 1%;
+        margin-bottom: 1%;
+        background-color: rgb(216, 218, 154);
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .div2 {
+        padding: 1%;
+        background-color: rgb(130, 133, 4);
+        border-radius: 50px;
+        width: max-content;
+        color: rgb(255, 255, 255);
+        font-size: xx-large;
+        font-weight: 700;
+    }
+</style>
+
+<body>
+
+</body>
+
+<script src="info.js"></script>
+
+<script>
+
+
+
+    let div1 = [], div2 = [], but1 = [], but2 = []
+
+    for (let i = 0; i < data1.length; i++) {
+
+        div1[i] = document.createElement("div");
+        div2[i] = document.createElement("div");
+        but1[i] = document.createElement("button");
+        but2[i] = document.createElement("button");
+
+        div1[i].className = "div1";
+        div1[i].id = "d".concat(i);
+        document.body.appendChild(div1[i]);
+
+
+        div2[i].className = "div2";
+        div2[i].innerHTML = data1[i];
+        document.getElementById("d".concat(i)).appendChild(div2[i]);
+
+        but1[i].onclick=function(){window.location.href = "https://beyond-space21.github.io/js/sample%20page/".concat(data2[i]).concat(".html")}
+        but1[i].innerHTML = "Preview";
+        but1[i].className = "button1";
+        document.getElementById("d".concat(i)).appendChild(but1[i]);
+
+
+        but2[i].onclick=function(){window.location.href = "https://beyond-space21.github.io/js/js%20source/".concat(data2[i]).concat(".js")}
+        but2[i].innerHTML = ".js code";
+        but2[i].className = "button1";
+        document.getElementById("d".concat(i)).appendChild(but2[i]);
+    }
+
+    var q =document.getElementsByClassName("button1");
+
+
+
+</script>
+
 </html>
