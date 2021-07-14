@@ -1,18 +1,12 @@
-var data1 ={
+data1 =[
+
+  "Get day of week using date",
+  "Date formater"
   
-  
-  
-  
-  
-  
-  
-}
-var data2 ={
-  
-  
-  
-  
-  
-  
-  
-}
+];
+data2=[
+
+  "getdow",
+  "date formater"
+
+];
