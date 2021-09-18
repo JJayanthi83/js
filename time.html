@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        background-color: rgb(87, 88, 88);
+        font-size: xx-large;
+        color: antiquewhite;
+        font-weight: 700;
+        font-family: 'Courier New', Courier, monospace;
+    }
+</style>
+
+<body>
+    <div id="div">
+    Live starts at 19th september 3:00 pm
+</div>
+</body>
+<script>
+    document.title = 'starts at 19th september 3:00 pm'
+    var div = document.getElementById('div')
+    div.style.marginTop = (window.innerHeight / 2) - (div.offsetHeight / 2) + 'px'
+    div.style.marginLeft = (window.innerWidth / 2) - (div.offsetWidth / 2) + 'px'
+</script>
+
+</html>
